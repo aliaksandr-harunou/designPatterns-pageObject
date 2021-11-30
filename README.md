@@ -1,1 +1,3 @@
-# module-7
+# npm install
+# npm run start-webdriver
+# npm run test
