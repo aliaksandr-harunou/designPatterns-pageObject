@@ -1,13 +1,21 @@
-const logger = require('../../../test/config/logger.config.js');
+const logger = require('../../config/logger.config.js');
 
 class Collection {
-    constructor(elementName, selector) {
-        this.collection = element.all(by.css(selector));
+    constructor(elementName, selectorType, selector) {
+        if (selectorType === "CSS") {
+            this.collection = element.all(by.css(selector));
+        } else if (selectorType === "XPATH") {
+            this.collection = element.all(by.xpath(selector));
+        } else if (selectorType === "ID") {
+            this.element = element.all(by.id(selector));
+        } else if (selectorType === "CLASS") {
+            this.element = element.all(by.className(selector));
+        }
         this.elementName = elementName;
     };
     async getCount() {
         const collectionCount = await this.collection.count();
-        logger.info(`Count of "${this.elementName}" is "${collectionCount}"`); 
+        logger.info(`Count of "${this.elementName}" is "${collectionCount}"`);
         return collectionCount;
     };
     async getTexts() {
@@ -22,7 +30,7 @@ class Collection {
             throw new Error(`No element with [${textToClick}] text found!`);
         }
         logger.info(`Clicking "${textToClick}" text in "${this.elementName}"`);
-        return this.collection.get(elementToClickIndex).click();
+        this.collection.get(elementToClickIndex).click();
     };
 };
 

@@ -1,8 +1,8 @@
-const HomePage = require("./home_page/home_page");
-const MyProfilePage = require("./my_profile_page/my_profile_page");
-const LoginPage = require("./login_page/login_page");
-const MicrosoftLoginPage = require("./login_page/micr_login_page");
-const BasePage = require("./base_page/base_page");
+const HomePage = require("./homePage/homePage");
+const MyProfilePage = require("./myProfilePage/myProfilePage");
+const LoginPage = require("./loginPage/loginPage");
+const MicrosoftLoginPage = require("./loginPage/micrLoginPage");
+const BasePage = require("./basePage/basePage");
 
 
 class PageFactory {
