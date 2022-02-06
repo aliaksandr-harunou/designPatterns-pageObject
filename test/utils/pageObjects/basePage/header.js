@@ -1,4 +1,3 @@
-const logger = require('../../config/logger.config.js');
 const Element = require("../baseElements/baseElement");
 const Collection = require("../baseElements/baseCollection");
 const EC = protractor.ExpectedConditions;

@@ -1,5 +1,5 @@
-const BasePage = require("../../../basePage/basePage");
-const Element = require("../../../baseElements/baseElement");
+const BasePage = require("../../basePage/basePage");
+const Element = require("../../baseElements/baseElement");
 const EC = protractor.ExpectedConditions;
 
 class MicrosoftLoginPage extends BasePage {

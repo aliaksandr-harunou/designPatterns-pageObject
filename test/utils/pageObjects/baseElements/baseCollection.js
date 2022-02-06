@@ -1,4 +1,4 @@
-const logger = require('../../config/logger.config.js');
+const logger = require('../../../config/logger.config');
 
 class Collection {
     constructor(elementName, selectorType, selector) {

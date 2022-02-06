@@ -1,5 +1,5 @@
 const expect = require("chai").expect;
-const PageFactory = require("../utils/pageFactory");
+const PageFactory = require("../utils/pageObjects/pageFactory");
 const loginPage = PageFactory.getPage("Login");
 const microsoftPage = PageFactory.getPage("MicrosoftLogin");
 const homePage = PageFactory.getPage("Home");

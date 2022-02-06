@@ -1,7 +1,7 @@
 const HomePage = require("./homePage/homePage");
 const MyProfilePage = require("./myProfilePage/myProfilePage");
-const LoginPage = require("./loginPage/loginPage");
-const MicrosoftLoginPage = require("./loginPage/micrLoginPage");
+const LoginPage = require("./loginPages/epamLoginPage/epamLoginPage");
+const MicrosoftLoginPage = require("./loginPages/micrLoginPage/micrLoginPage");
 const BasePage = require("./basePage/basePage");
 
 
