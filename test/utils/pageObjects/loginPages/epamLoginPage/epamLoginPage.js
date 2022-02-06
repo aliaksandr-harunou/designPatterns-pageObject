@@ -1,6 +1,6 @@
-const BasePage = require("../basePage/basePage");
-const Element = require("../baseElements/baseElement");
-const creds = require('../constants/credentials');
+const BasePage = require("../../../basePage/basePage");
+const Element = require("../../../baseElements/baseElement");
+const creds = require('../../../constants/credentials');
 const EC = protractor.ExpectedConditions;
 
 class LoginPage extends BasePage {
